@@ -1,0 +1,33 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/badges/quality-score.png?b=v1)](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/?branch=v1) [![Code Coverage](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/badges/coverage.png?b=v1)](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/?branch=v1) [![Build Status](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/badges/build.png?b=v1)](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/build-status/v1) [![Code Intelligence Status](https://scrutinizer-ci.com/g/nystudio107/craft-plugin-vite-buildchain/badges/code-intelligence.svg?b=v1)](https://scrutinizer-ci.com/code-intelligence)
+
+# Craft Vite Buildchain
+
+Related Articles:
+
+[Vite.js Next Generation Frontend Tooling + Craft CMS](https://nystudio107.com/blog/using-vite-js-next-generation-frontend-tooling-with-craft-cms)
+
+## Requirements
+
+* Any version of Craft CMS
+
+## Installation
+
+Clone this repo, and then copy the contents (including the hidden `.gitignore` file) into the root directory of your Craft CMS project via:
+
+```
+git clone https://github.com/nystudio107/craft-vite-buildchain.git
+```
+
+It's done this way as a "starter" rather than as a package, because every Craft CMS project will make bespoke changes to it.
+
+**N.B.:** If you won't be using this buildchain with the [plugindev](https://github.com/nystudio107/plugindev) local development environment, you'll need to delete this line from the `Makefile`:
+```
+	--network craftproject_default \
+```
+...so that it won't be looking for the `craftproject_default` Docker network.
+
+## Craft Vite Buildchain Overview
+
+Craft Vite Buildchain is a drop-in buildchain you can use in your Craft CMS projects, giving you Hot Module Replacement, Tailwind CSS, and optimized production builds.
+
+Brought to you by [nystudio107](https://nystudio107.com)
